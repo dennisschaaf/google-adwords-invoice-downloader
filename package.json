@@ -1,0 +1,20 @@
+{
+  "name": "googleadscheckout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webdriver-manager start --quiet --detach && protractor conf.js && webdriver-manager shutdown",
+    "postinstall": "npm run webdriver:update",
+    "webdriver:update": "webdriver-manager update",
+    "protractor": "protractor conf.js",
+    "protractor:explore": "protractor --elementExplorer"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "protractor": "^4.0.14",
+    "webdriver-manager": "^11.1.1"
+  }
+}
